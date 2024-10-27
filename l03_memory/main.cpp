@@ -54,7 +54,7 @@ int main()
 
   // this is basically adding '2' to the address of the memory on the heap
   // and make that spot in memory = 20
-  // this is = to doing: 
+  // this is = to doing:
   // v_arr[2] = 20
   *(v_arr + 2) = 20;
 
@@ -62,17 +62,15 @@ int main()
   // C++ References //
   //
 
+  /*
+    C++ References are basically 'safe pointers'
+    instead of using *, use &
 
-  // C++ References are basically 'safe pointers'
-  // instead of using *, use &
-  //
-  // the reason why they are called 'safe'
-  // is because they *MUST* point to *existing* data
-  // can never point to nothing
-  //
-  // use references over pointers most of the time
-  //
+    the reason why they are called 'safe'
+    is because they *MUST* point to *existing* data
+    can never point to nothing
 
-
+    use references over pointers most of the time
+  */
   return 0;
 }

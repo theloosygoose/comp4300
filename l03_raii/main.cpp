@@ -17,7 +17,7 @@
   - the data is stored on the Heap
 
 
--- C++ Smart Pointers
+-- C++ Smart Pointers --
 
 Smart Pointers are regular pointers wrapped in a Class
 
@@ -38,6 +38,18 @@ Smart Pointers are regular pointers wrapped in a Class
     - Everytime a shared_ptr destructs, the counter is decrased by 1
     - When count reaches 0, the resource is deallocated
 
+-- Allocating / Passing Data? --
+
+  1. If possible, use the stack
+    - Small, local variables
+    - Pass variables by const reference if size > 8 bytes
+
+  2. If you need heap memory, use a smart pointer
+    - std::shared_ptr<T> myBigData;
+    - std::shared_ptr<Base> = std::make_shared<Derived>();
+
+  3. Only when ABSOLUTELY NECESSARY use raw pointer / new
+
 */
 
 // -- RAII CLASS EXAMPLE -- //
@@ -56,6 +68,7 @@ public:
   int &operator[](size_t i) { return array[i]; }
 };
 
+
 int main()
 {
 
@@ -64,4 +77,5 @@ int main()
   arr[5] = 21;
 
   return 0;
+
 } // arr destructs, mem deallocated
