@@ -1,7 +1,7 @@
 //
 //
 // comp4300/l03_raii
-// main.cpp
+// notes.cpp
 //
 // Written by Gusti Rama Henry on 10/26/2024
 // Copyright (c) 2024 Gusti Rama Henry. All Rights Reserved.
@@ -50,6 +50,9 @@ Smart Pointers are regular pointers wrapped in a Class
 
   3. Only when ABSOLUTELY NECESSARY use raw pointer / new
 
+-- C++ Templates --
+  - Powerful, easy to use
+  - Can be VERY complicated
 */
 
 // -- RAII CLASS EXAMPLE -- //
