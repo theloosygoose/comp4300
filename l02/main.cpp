@@ -21,6 +21,7 @@ class Student
   float m_avg = 0;
 
 public:
+  // Constructor
   Student() {}
 
   Student(std::string first, std::string last, int id, float avg)
@@ -126,6 +127,7 @@ int main(int argc, char *argv[])
   // Course Class Stuff
 
   Course comp4300("COMP 4300");
+
   comp4300.addStudent(s1);
   comp4300.addStudent(s2);
   comp4300.addStudent(s3);
